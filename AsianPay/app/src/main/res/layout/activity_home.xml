@@ -12,6 +12,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:text="Good morning"
         android:id="@+id/good_morning"
+        android:layout_marginLeft="40dp"
         />
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -24,14 +25,19 @@
         >
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:padding="20dp"
+            android:background="@color/purple_200"
             android:layout_height="wrap_content">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                />
+           <ImageView
+               android:id="@+id/image"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintLeft_toLeftOf="parent"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/frame_11"/>
             <LinearLayout
+                app:layout_constraintLeft_toRightOf="@+id/image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -43,16 +49,18 @@
                     android:layout_height="wrap_content"
                     android:text="Ram Thapa"
                     android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="9812121212"
                     android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
 
                     />
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
@@ -60,13 +68,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="rs.100"
+                    android:textColor="@color/black"
+                    android:id="@+id/money"
                     />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="image"
-                    />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/no_eye"
+                        android:id="@+id/no_eye"
+                        android:layout_marginLeft="20dp"
+                        />
 
                 </LinearLayout>
 

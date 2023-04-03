@@ -64,7 +64,7 @@ public class Login extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(Login.this,RegisterActivity.class);
                 startActivity(intent);
-                Toast.makeText(Login.this, "register clicked", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(Login.this, "register clicked", Toast.LENGTH_SHORT).show();
             }
         });
         forgot_password_btn.setOnClickListener(new View.OnClickListener() {
