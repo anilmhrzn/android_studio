@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 
+
 public class Login extends AppCompatActivity {
     Button login_btn;
     Button register_btn;
@@ -29,11 +30,13 @@ public class Login extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        getSupportActionBar().hide();
         login_btn=findViewById(R.id.login_btn);
         register_btn=findViewById(R.id.register_btn);
         forgot_password_btn=findViewById(R.id.forgot_password_btn);
         password=findViewById(R.id.password);
         username=findViewById(R.id.username);
+
 
 
 

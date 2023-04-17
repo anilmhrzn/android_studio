@@ -12,11 +12,9 @@ public class HomeActivity extends AppCompatActivity {
 ImageView no_eye;
 Boolean isVisible=true;
 TextView money;
-//String temp;
 public void ChangeVisibility(){
     if(isVisible){
         money.setText("XXXXX");
-//        temp=money.getText().toString();
         isVisible=false;
     }else{
         money.setText("Rs.100");
@@ -28,6 +26,7 @@ public void ChangeVisibility(){
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        getSupportActionBar().hide();
         no_eye=findViewById(R.id.no_eye);
         money=findViewById(R.id.money);
     no_eye.setOnClickListener(new View.OnClickListener() {
