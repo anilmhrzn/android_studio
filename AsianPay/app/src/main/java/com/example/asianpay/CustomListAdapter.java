@@ -14,7 +14,6 @@ import android.widget.TextView;
 
 public class CustomListAdapter extends ArrayAdapter<String> {
 
-
     public CustomListAdapter( Context context,String[] dataToShow) {
         super(context,0, dataToShow);
     }
@@ -30,5 +29,7 @@ public class CustomListAdapter extends ArrayAdapter<String> {
         TextView valueText=singleListViewItem.findViewById(R.id.value);
         TextView numberText=singleListViewItem.findViewById(R.id.number);
         return singleListViewItem;
+
     }
+
 }
